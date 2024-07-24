@@ -948,12 +948,93 @@ section {
   padding: 0;
 }
 
+.delayed {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+/* Keyframes for fade-in and slide-up effect */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Delays for each h2 element */
+.delayed:nth-of-type(1) {
+  animation-delay: 0.5s; /* Adjust the delay as needed */
+}
+
+.delayed:nth-of-type(2) {
+  animation-delay: 1s; /* Adjust the delay as needed */
+}
+
+.delayed:nth-of-type(3) {
+  animation-delay: 1.5s; /* Adjust the delay as needed */
+}
 
 
+/* Card styles */
+.card {
+  background-color: rgba(255, 255, 255, 0.295); /* Opaque background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 600px;
+  margin: 50px auto; /* Center the card */
+  text-align: center; /* Center the text */
+}
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
+/* Initial state for the delayed elements */
+.delayed {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+/* Keyframes for fade-in and slide-up effect */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Delays for each h2 element */
+.delayed:nth-of-type(1) {
+  animation-delay: 0.5s; /* Adjust the delay as needed */
+}
+
+.delayed:nth-of-type(2) {
+  animation-delay: 1s; /* Adjust the delay as needed */
+}
+
+.delayed:nth-of-type(3) {
+  animation-delay: 1.5s; /* Adjust the delay as needed */
+}
+
+/* Button styles
+.btn-about {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Button background color */
+  /* color: white; Button text color */
+  /* border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+} */
+
+/* .btn-about:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+/* }  */
+
+.image-content{
+  margin-top: 80px;
+} 
+
 #footer {
   background: #e9e8e6;
   padding: 30px 0;
